@@ -1,0 +1,111 @@
+
+.top, .bio, .portfolio, .contact {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 99%;
+    margin: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    box-shadow: 2px 5px rgb(112, 142, 178);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    font-size: 40px;
+    flex-wrap: wrap;
+}
+
+.bio, .portfolio, .contact {
+    height: 400px;
+    
+}
+
+.top h1 {
+    margin-left: 20px;
+    color: rgb(112, 142, 178);
+}
+
+.top a {
+    display:inline-block;
+    color: rgb(112, 142, 178);
+    padding: 2px;
+    margin: 2px;
+    text-shadow: none;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: right;
+}
+
+
+
+.bio a, #contact-tile {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    text-shadow: none;
+    font-size: 30px;
+}
+
+.bio img {
+    height: 200px;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: auto;
+    Border: 2px solid rgb(183, 188, 194);
+    box-shadow: 2px 5px rgb(183, 188, 194);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.bio p {
+    margin: 100px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: none;
+}
+
+.portfolio {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#portfolio-tile {
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    font-size: 30px;
+}
+
+.portfolio-items {
+    height: 250px;
+    width: 250px;
+    padding: 0px;
+    margin: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 20px;
+    justify-items: center;
+    text-decoration: none;
+}
+
+.portfolio-items img {
+    height: 100%;
+    width: 100%;
+}
+
+.portfolio-items a {
+    text-decoration: none;
+}
+
+.contact {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 150px;
+}
+
+.contact-detail {
+    font-size: 25px;
+}
