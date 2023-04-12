@@ -1,4 +1,4 @@
-
+/* General Defintions */
 .top, .bio, .portfolio, .contact {
     display: flex;
     position: relative;
@@ -13,13 +13,15 @@
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
     font-size: 40px;
+    flex-wrap: wrap;
 }
 
-.bio, .portfolio, .contact {
-    height: 400px;
-    
+.bio {
+    height: auto;
+    min-height: 400px;    
 }
 
+/* Definitions for Top Section */
 .top h1 {
     margin-left: 20px;
     color: rgb(112, 142, 178);
@@ -36,20 +38,27 @@
     text-align: right;
 }
 
+.top a:hover {
+    opacity: 0.5;
+}
 
-
-.bio a, #contact-tile {
-    position: absolute;
-    left: 100px;
-    top: 30px;
+/* Definitions for Biography section */
+#bio-tile {
+    display: flex;
+    position: relative;
     text-shadow: none;
     font-size: 30px;
+    height: 50px;
+    width: 100%;
+    justify-content: left;
+    left: 50px;
 }
 
 .bio img {
+    position:relative;
     height: 200px;
     width: 300px;
-    margin-left: 20px;
+    left: 50px;
     margin-right: auto;
     Border: 2px solid rgb(183, 188, 194);
     box-shadow: 2px 5px rgb(183, 188, 194);
@@ -58,53 +67,92 @@
 }
 
 .bio p {
-    margin: 100px;
+    margin: 50px;
     text-align: center;
     font-size: 30px;
     text-shadow: none;
 }
 
+/* Defintions for Portfolio Section */
 .portfolio {
     justify-content: center;
     flex-wrap: wrap;
+    height: auto;
+    min-height: 1300px;
 }
 
 #portfolio-tile {
-    position: absolute;
-    left: 100px;
-    top: 40px;
+    display: flex;
+    position:relative;
+    left: 50px;
+    justify-content: left;
     font-size: 30px;
+    width: 100%;
+    height: 50px;
 }
 
-.portfolio-items {
-    height: 250px;
+.box1, .box2, .box3, .box4 {
+    height: 500px;
     width: 250px;
     padding: 0px;
     margin: 10px;
+    margin-top: 30px;
     text-align: center;
     border-style: solid;
     border-width: 1px;
     font-size: 20px;
-    justify-items: center;
-    text-decoration: none;
+    justify-content: center;
 }
 
-.portfolio-items img {
+.box1 {
+    width: 1000px;
+}
+
+.box3, .box4 {
+    width: 625px;
+}
+
+.box1 img, .box2 img, .box3 img, .box4 img {
     height: 100%;
     width: 100%;
 }
 
-.portfolio-items a {
+.box1 a, .box2 a, .box3 a, .box4 a {
     text-decoration: none;
+    color:rgb(112, 142, 178);
 }
 
+@media screen and (max-width: 1030px) {
+    .box1, .box2, .box3, .box4 {
+    width: 80%;
+    }
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover {
+    opacity: 0.5;
+}
+
+/* Defintions for Contact Section */
 .contact {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-    height: 150px;
+    height: 200px;
 }
 
+#contact-tile {
+    display: flex;
+    position: relative;
+    text-shadow: none;
+    font-size: 30px;
+    height: 50px;
+    width: 100%;
+    justify-content: left;
+    left: 50px;
+}
 .contact-detail {
+    justify-items: center;
     font-size: 25px;
+    line-height: 40px;
+    text-decoration: none;
 }
